@@ -1,0 +1,16 @@
+#include <iostream>
+
+int main()
+{
+	int b;
+	char a = '"';
+	printf_s("Enter the number %cb%c to calculate the following function: f(x) = x^2 + b\nx = {-10; 10}\nb = ", a, a);
+	scanf_s("%d", &b);
+	printf_s("Resault: ");
+	for (int i = -10; i <= 10; i++)
+	{
+		printf_s("%d ",(i*i + b));
+	} 
+	printf_s("\n");
+	return 0;
+}
