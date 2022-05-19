@@ -1,0 +1,22 @@
+#include <iostream>
+#include <locale.h>
+
+int main(){
+
+setlocale(LC_ALL, "ru");
+
+	int min = 9999, i = 0, N = 0;
+	printf("Введите через пробел 10 чисел: ");
+	do
+	{
+		scanf_s("%d ", &N);
+		if (min > N) {
+			min = N;
+		}
+		
+		i++;
+
+	} while (i < 9);
+	printf_s("\nМиниимальное из введенного числа: %d", min);
+
+	return 0;
